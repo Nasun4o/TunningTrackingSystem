@@ -21,7 +21,6 @@ namespace HppTuning.Services
             };
             this.Context.SimpleNotUsers.Add(user);
             this.Context.SaveChanges();
-            //this.Context.SimpleNotUsers.Add(user);
         }
     }
 }

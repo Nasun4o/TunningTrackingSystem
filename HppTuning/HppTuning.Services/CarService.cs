@@ -12,16 +12,34 @@ namespace HppTuning.Services
     public class CarService : Service
     {
 
-        //public CarViewModel ShowCarFormWithUser()
-        //{
-        //    CarViewModel carModel = new CarViewModel();
-        //    List<ApplicationUser> users = new List<ApplicationUser>();
+        public CarUserViewModel ShowUsers()
+        {
+            CarUserViewModel carModel = new CarUserViewModel();
+            List<SimpleNotUser> users = new List<SimpleNotUser>();
 
 
-        //    foreach (var applicationUser in users)
-        //    {
-                
-        //    }
-        //}
+            foreach (var user in this.Context.SimpleNotUsers)
+            {
+                users.Add(user);
+            }
+
+            carModel.UsersList = users;
+            return carModel;
+        }
+
+        public void AddCar(CarUserViewModel model)
+        {
+            Car cuvm = new Car()
+            {
+                HorsePower = model.HorsePower,
+                Make = model.Make,
+                Model = model.Model,
+                NewtonMetre = model.NewtonMetre,
+                Type = model.Type,
+                Id = model.Id
+            };
+            this.Context.Cars.Add(cuvm);
+            this.Context.SaveChanges();
+        }
     }
 }

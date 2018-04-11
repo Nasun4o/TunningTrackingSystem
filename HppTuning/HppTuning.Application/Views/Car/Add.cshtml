@@ -1,0 +1,77 @@
+﻿@model HppTuning.Models.ViewModels.Car.CarUserViewModel
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm("Add","Car", FormMethod.Post, new {@class = "form-horizontal", role="form"}))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    //public double HorsePower { get; set; }
+    //public double NewtonMetre { get; set; }
+    //public string Make { get; set; }
+    //public string Model { get; set; }
+    //public string Type { get; set; }
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Make, "Make", new {@class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Make, new {@class = "form-control", placeholder = "Make" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Model, "Model", new {@class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Model, new {@class = "form-control", placeholder = "Model" })
+        </div>
+    </div>
+
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.HorsePower, "Horse Power", new {@class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.HorsePower, new {@class = "form-control", placeholder = "Horse Power" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.NewtonMetre, "Nm", new {@class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.NewtonMetre, new {@class = "form-control", placeholder = "Nm" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Type, "Track, Hillclimb, Rally", new {@class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Type, new {@class = "form-control", placeholder = "Track, Hillclimb, Rally" })
+        </div>
+    </div>
+
+    @*<div class="control-group">
+        @Html.LabelFor(m => m.UsersList, "Car Owner", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+         
+            <select class="form-control" id="UsersList" name="UserId">
+                @foreach (var user in @Model.UsersList)
+                {
+                    <option value="@user.Id">@user.FullName</option>
+                }
+
+            </select>
+
+        </div>
+    </div>*@
+
+
+    <div class="control-group">
+        <!-- Button -->
+        <div class="controls">
+            <button class="btn btn-success" type="submit">Asign Car to Owner</button>
+        </div>
+    </div>
+}

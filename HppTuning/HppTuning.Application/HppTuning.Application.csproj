@@ -258,10 +258,9 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\SimpleNotUser\NewSimpleUser.cshtml" />
+    <Content Include="Views\Car\Add.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Car\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>

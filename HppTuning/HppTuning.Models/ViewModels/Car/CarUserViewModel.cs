@@ -3,11 +3,11 @@ using HppTuning.Models.EntityModels;
 
 namespace HppTuning.Models.ViewModels.Car
 {
-    public class CarViewModel
+    public class CarUserViewModel
     {
-        public CarViewModel()
+        public CarUserViewModel()
         {
-                this.Users = new List<SimpleNotUser>();
+                this.UsersList = new List<SimpleNotUser>();
         }
 
         public int Id { get; set; }
@@ -16,7 +16,7 @@ namespace HppTuning.Models.ViewModels.Car
         public string Make { get; set; }
         public string Model { get; set; }
         public string Type { get; set; }
-        public IEnumerable<SimpleNotUser> Users { get; set; }
+        public IEnumerable<SimpleNotUser> UsersList { get; set; }
         public int UserId { get; set; }
     }
 }

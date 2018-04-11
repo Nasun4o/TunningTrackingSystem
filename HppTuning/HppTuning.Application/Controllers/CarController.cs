@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HppTuning.Models.ViewModels.Car;
 using HppTuning.Services;
 
 namespace HppTuning.Application.Controllers
@@ -21,13 +22,19 @@ namespace HppTuning.Application.Controllers
         [HttpGet]
         public ActionResult Add()
         {
-            return this.View();
+            CarUserViewModel model = this._carService.ShowUsers();
+            return this.View(model);
         }
 
         [HttpPost]
-        public ActionResult Add(string model)
+        public ActionResult Add([Bind(Exclude = "Id")] CarUserViewModel model)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+               this._carService.AddCar(model);
+                return RedirectToAction("Index", "Home");
+            }
+            return View(model);
         }
 
         // GET: Car

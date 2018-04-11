@@ -29,7 +29,7 @@ namespace HppTuning.Application.Controllers
             if (ModelState.IsValid)
             {
                 this.service.AddNewUser(simpleUserViewModel);
-                return View();
+                return RedirectToAction("Index", "Home");
             }
 
             return View(simpleUserViewModel);
