@@ -16,8 +16,8 @@ namespace HppTuning.Services
             SimpleNotUser user = new SimpleNotUser()
             {
                 FullName = model.FullName,
-                PhoneNumber = model.PhoneNumber,
-                Id = model.Id
+                PhoneNumber = model.PhoneNumber
+                 
             };
             this.Context.SimpleNotUsers.Add(user);
             this.Context.SaveChanges();

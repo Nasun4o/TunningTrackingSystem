@@ -27,14 +27,14 @@ namespace HppTuning.Application.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add([Bind(Exclude = "Id")] CarUserViewModel model)
+        public ActionResult Add([Bind(Include = "Id, HorsePower, NewtonMetre, Make, Model, Type, UserId")] CarUserViewModel carUserModel)
         {
             if (ModelState.IsValid)
             {
-               this._carService.AddCar(model);
+               this._carService.AddCar(carUserModel);
                 return RedirectToAction("Index", "Home");
             }
-            return View(model);
+            return View(carUserModel);
         }
 
         // GET: Car

@@ -57,18 +57,6 @@
   <ItemGroup>
     <Compile Include="Data.cs" />
     <Compile Include="HppDbContext.cs" />
-    <Compile Include="Migrations\201804062214050_EntitiyChanges.cs" />
-    <Compile Include="Migrations\201804062214050_EntitiyChanges.Designer.cs">
-      <DependentUpon>201804062214050_EntitiyChanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804071151173_PhoneNumberChange.cs" />
-    <Compile Include="Migrations\201804071151173_PhoneNumberChange.Designer.cs">
-      <DependentUpon>201804071151173_PhoneNumberChange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804071256390_MIniorChanges.cs" />
-    <Compile Include="Migrations\201804071256390_MIniorChanges.Designer.cs">
-      <DependentUpon>201804071256390_MIniorChanges.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,17 +69,6 @@
       <Project>{9b96a88a-721e-4632-97f8-f09bb5b7d509}</Project>
       <Name>HppTuning.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804062214050_EntitiyChanges.resx">
-      <DependentUpon>201804062214050_EntitiyChanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804071151173_PhoneNumberChange.resx">
-      <DependentUpon>201804071151173_PhoneNumberChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804071256390_MIniorChanges.resx">
-      <DependentUpon>201804071256390_MIniorChanges.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

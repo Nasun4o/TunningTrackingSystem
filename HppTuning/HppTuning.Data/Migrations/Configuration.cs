@@ -1,15 +1,19 @@
 namespace HppTuning.Data.Migrations
 {
+    using System;
+    using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<HppDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<HppTuning.Data.HppDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(HppDbContext context)
+        protected override void Seed(HppTuning.Data.HppDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

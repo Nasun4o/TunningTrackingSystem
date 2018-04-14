@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using HppTuning.Models.EntityModels;
 using HppTuning.Models.ViewModels.Car;
-using HppTuning.Models.ViewModels.Account;
 
 namespace HppTuning.Services
 {
@@ -36,7 +31,8 @@ namespace HppTuning.Services
                 Model = model.Model,
                 NewtonMetre = model.NewtonMetre,
                 Type = model.Type,
-                Id = model.Id
+                SimpleNotUserId = model.UserId
+                
             };
             this.Context.Cars.Add(cuvm);
             this.Context.SaveChanges();

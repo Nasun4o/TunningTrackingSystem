@@ -56,7 +56,6 @@ C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debu
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\System.Web.WebPages.xml
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csprojResolveAssemblyReference.cache
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csproj.CoreCompileInputs.cache
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.dll
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.pdb
