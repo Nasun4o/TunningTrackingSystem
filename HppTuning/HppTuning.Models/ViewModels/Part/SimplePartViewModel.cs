@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HppTuning.Models.EntityModels
+namespace HppTuning.Models.ViewModels.Part
 {
-    public class Part
+    public class SimplePartViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -13,7 +16,5 @@ namespace HppTuning.Models.EntityModels
         public DateTime? DateOfPurchase { get; set; }
         public DateTime? ExpectedDateOfDelivery { get; set; }
         public bool IsPartInstalled { get; set; }
-
-        public virtual Car Cars { get; set; }
     }
 }

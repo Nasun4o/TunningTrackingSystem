@@ -10,12 +10,20 @@ namespace HppTuning.Application.Controllers
 {
     public class SimpleNotUserController : Controller
     {
-        private readonly UserService service;
+        private readonly UserService _userService;
+
         public SimpleNotUserController()
         {
-                this.service = new UserService();
+                this._userService = new UserService();
         }
 
+        [HttpGet]
+        public ActionResult GetUserCars()
+        {
+           var carModel =  this._userService.GetUserCar();
+
+            return this.View(carModel);
+        }
 
         [HttpGet]
         public ActionResult NewSimpleUser()
@@ -28,8 +36,8 @@ namespace HppTuning.Application.Controllers
         {
             if (ModelState.IsValid)
             {
-                this.service.AddNewUser(simpleUserViewModel);
-                return RedirectToAction("Index", "Home");
+                this._userService.AddNewUser(simpleUserViewModel);
+                return RedirectToAction("Add", "Car");
             }
 
             return View(simpleUserViewModel);

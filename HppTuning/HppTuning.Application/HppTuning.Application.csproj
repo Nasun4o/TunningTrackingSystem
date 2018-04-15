@@ -193,6 +193,7 @@
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PartController.cs" />
     <Compile Include="Controllers\SimpleNotUserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +260,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\SimpleNotUser\NewSimpleUser.cshtml" />
     <Content Include="Views\Car\Add.cshtml" />
+    <Content Include="Views\SimpleNotUser\GetUserCars.cshtml" />
+    <Content Include="Views\Part\AddPart.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -1,0 +1,72 @@
+﻿@model HppTuning.Models.ViewModels.Part.SimplePartViewModel
+@{
+    ViewBag.Title = "AddPart";
+}
+
+<h2>AddPart</h2>
+
+
+@using (Html.BeginForm("AddPart", "Part", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Name, "Name", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Manufacturer, "Manufacturer", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Manufacturer, new { @class = "form-control", placeholder = "Manufacturer" })
+        </div>
+    </div>
+
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Price, "Price", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Price, new { @class = "form-control", placeholder = "Price" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.DateOfPurchase, "Date Of Purchase", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.DateOfPurchase, new { @class = "form-control", placeholder = "Date Of Purchase" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.ExpectedDateOfDelivery, "ExpectedDateOfDelivery", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.ExpectedDateOfDelivery, new { @class = "form-control", placeholder = "ExpectedDateOfDelivery" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.PartBuyedFrom, "PartBuyedFrom", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.PartBuyedFrom, new { @class = "form-control", placeholder = "PartBuyedFrom" })
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.IsPartInstalled, "IsPartInstalled", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.IsPartInstalled, new { @class = "form-control", placeholder = "IsPartInstalled" })
+        </div>
+    </div>
+
+
+
+    <div class="control-group">
+        <div class="controls">
+            <button class="btn btn-success" type="submit">Add Part</button>
+        </div>
+    </div>
+}

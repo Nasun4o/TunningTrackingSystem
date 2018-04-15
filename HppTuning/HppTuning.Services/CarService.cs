@@ -7,7 +7,7 @@ namespace HppTuning.Services
     public class CarService : Service
     {
 
-        public CarUserViewModel ShowUsers()
+        public CarUserViewModel GetCarModelWithSimpleUsersList()
         {
             CarUserViewModel carModel = new CarUserViewModel();
             List<SimpleNotUser> users = new List<SimpleNotUser>();

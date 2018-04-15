@@ -22,5 +22,31 @@ namespace HppTuning.Services
             this.Context.SimpleNotUsers.Add(user);
             this.Context.SaveChanges();
         }
+
+        public SimpleUserWithCarsModel GetUserCar()
+        {
+            var data = this.Context.Cars.Include("SimpleNotUser").ToArray();
+            SimpleUserWithCarsModel carsWithUserViewModel = new SimpleUserWithCarsModel();
+            List<SimpleCarUserViewModel> carUserView = new List<SimpleCarUserViewModel>();
+            foreach (var item in data)
+            {
+                SimpleCarUserViewModel scuvm = new SimpleCarUserViewModel
+                {
+                    FullName = item.SimpleNotUser.FullName,
+                    HorsePower = item.HorsePower,
+                    Make = item.Make,
+                    Model = item.Model,
+                    NewtonMetre = item.NewtonMetre,
+                    Type = item.Type,
+                    Id = item.Id
+                };
+
+
+                carUserView.Add(scuvm);
+            }
+            carsWithUserViewModel.SimpleCarModels = carUserView;
+            
+            return carsWithUserViewModel;
+        }
     }
 }

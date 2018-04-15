@@ -59,3 +59,4 @@ C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debu
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csproj.CoreCompileInputs.cache
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.dll
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.pdb
+C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csprojResolveAssemblyReference.cache

@@ -22,7 +22,7 @@ namespace HppTuning.Application.Controllers
         [HttpGet]
         public ActionResult Add()
         {
-            CarUserViewModel model = this._carService.ShowUsers();
+            CarUserViewModel model = this._carService.GetCarModelWithSimpleUsersList();
             return this.View(model);
         }
 

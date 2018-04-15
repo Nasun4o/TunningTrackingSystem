@@ -1,0 +1,47 @@
+﻿@model HppTuning.Models.ViewModels.SimpleUser.SimpleUserWithCarsModel
+@{
+    ViewBag.Title = "GetUserCars";
+}
+
+<h2>GetUserCars</h2>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                Make
+            </th>
+            <th>
+                Horse Power
+            </th>
+        </tr>
+    </thead>
+    @foreach (var car in Model.SimpleCarModels)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @car.FullName
+                </td>
+                <td>
+                    @car.Model
+                </td>
+                <td>
+                    @car.Make
+                </td>
+                <td>
+                    @car.HorsePower
+                </td>
+                <td>
+                    <a href="../Part/AddPart/@car.Id">Add Part</a>
+                </td>
+            </tr>
+        </tbody>
+
+    }
+</table>
