@@ -91,3 +91,5 @@ C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\D
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csproj.CoreCompileInputs.cache
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.dll
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.pdb
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\AutoMapper.dll
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\AutoMapper.xml
