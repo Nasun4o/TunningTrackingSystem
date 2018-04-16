@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HppTuning.Models.ViewModels.Part
 {
@@ -16,5 +12,6 @@ namespace HppTuning.Models.ViewModels.Part
         public DateTime? DateOfPurchase { get; set; }
         public DateTime? ExpectedDateOfDelivery { get; set; }
         public bool IsPartInstalled { get; set; }
+        public int CarId { get; set; }
     }
 }

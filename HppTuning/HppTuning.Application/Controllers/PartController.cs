@@ -13,22 +13,35 @@ namespace HppTuning.Application.Controllers
     {
         private readonly PartService _partService;
 
-        public PartController(PartService partService)
+        public PartController()
         {
-            _partService = partService;
+            this._partService = new PartService();
         }
 
         [HttpGet]
-        public ActionResult AddPart()
+        public ActionResult ShowAllParts (int id)
         {
-            SimplePartViewModel simplePartViewModel = new SimplePartViewModel();
+            AllPartsViewModel allPartsViewModel = _partService.ShowAllPartsForCarById(id);
+            return View(allPartsViewModel);
+        }
+
+
+        [HttpGet]
+        public ActionResult AddPart(int id)
+        {
+            SimplePartViewModel simplePartViewModel = _partService.SetPartFormGetModel(id);
             return View(simplePartViewModel);
         }
 
         [HttpPost]
-        public ActionResult AddPart(int id)
+        public ActionResult AddPart([Bind(Include = "Id,Name,Manufacturer,Price,PartBuyedFrom,DateOfPurchase,ExpectedDateOfDelivery,IsPartInstalled,CarId")]SimplePartViewModel simplePartViewModel)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                _partService.AddNewPart(simplePartViewModel);
+                return RedirectToAction("AddPart","Part");
+            }
+            return View(simplePartViewModel);
         }
 
     }

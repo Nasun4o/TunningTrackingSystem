@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace HppTuning.Models.EntityModels
 {
@@ -15,5 +14,6 @@ namespace HppTuning.Models.EntityModels
         public bool IsPartInstalled { get; set; }
 
         public virtual Car Cars { get; set; }
+        public int? CarId { get; set; }
     }
 }

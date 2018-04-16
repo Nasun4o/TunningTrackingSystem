@@ -262,6 +262,7 @@
     <Content Include="Views\Car\Add.cshtml" />
     <Content Include="Views\SimpleNotUser\GetUserCars.cshtml" />
     <Content Include="Views\Part\AddPart.cshtml" />
+    <Content Include="Views\Part\ShowAllParts.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

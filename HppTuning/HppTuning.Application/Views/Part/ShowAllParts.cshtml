@@ -1,0 +1,93 @@
+﻿@model HppTuning.Models.ViewModels.Part.AllPartsViewModel
+@{
+    ViewBag.Title = "ShowAllParts";
+}
+
+<h2>Show All Parts</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Manufacturer
+            </th>
+          
+            <th>
+                Price
+            </th>
+            <th>
+                Buyed From
+            </th>
+            <th>
+                DateOfPurchase
+            </th>
+            <th>
+                ExpectedDateOfDelivery
+            </th>
+            <th>
+                IsPartInstalled
+            </th>
+        </tr>
+    </thead>
+    @foreach (var part in Model.AllParts)
+    {
+        <tbody >
+            @if (part.IsPartInstalled == true)
+            {
+                <tr style="background: green;">
+                    <td>
+                        @part.Name
+                    </td>
+                    <td>
+                        @part.Manufacturer
+                    </td>
+                    <td>
+                        @part.Price
+                    </td>
+                    <td>
+                        @part.PartBuyedFrom
+                    </td>
+                    <td>
+                        @part.DateOfPurchase
+                    </td>
+                    <td>
+                        @part.ExpectedDateOfDelivery
+                    </td>
+                    <td>
+                        @part.IsPartInstalled
+                    </td>
+
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>
+                        @part.Name
+                    </td>
+                    <td>
+                        @part.Manufacturer
+                    </td>
+                    <td>
+                        @part.Price
+                    </td>
+                    <td>
+                        @part.PartBuyedFrom
+                    </td>
+                    <td>
+                        @part.DateOfPurchase
+                    </td>
+                    <td>
+                        @part.ExpectedDateOfDelivery
+                    </td>
+                    <td>
+                        @part.IsPartInstalled
+                    </td>
+                </tr>
+            }
+        </tbody>
+    }
+</table>

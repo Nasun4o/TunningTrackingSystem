@@ -14,13 +14,13 @@ namespace HppTuning.Application.Controllers
 
         public SimpleNotUserController()
         {
-                this._userService = new UserService();
+            this._userService = new UserService();
         }
 
         [HttpGet]
         public ActionResult GetUserCars()
         {
-           var carModel =  this._userService.GetUserCar();
+            var carModel = this._userService.GetUserCar();
 
             return this.View(carModel);
         }

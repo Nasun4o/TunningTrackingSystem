@@ -103,6 +103,7 @@
     <Compile Include="ViewModels\Manage\ConfigureTwoFactorViewModel.cs" />
     <Compile Include="ViewModels\Manage\SetPasswordViewModel.cs" />
     <Compile Include="ViewModels\Manage\VerifyPhoneNumberViewModel.cs" />
+    <Compile Include="ViewModels\Part\AllPartsViewModel.cs" />
     <Compile Include="ViewModels\Part\SimplePartViewModel.cs" />
     <Compile Include="ViewModels\SimpleUser\SimpleCarModel.cs" />
     <Compile Include="ViewModels\SimpleUser\SimpleCarUserViewModel.cs" />
