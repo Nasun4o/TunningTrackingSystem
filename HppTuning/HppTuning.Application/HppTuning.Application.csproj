@@ -208,6 +208,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\favicon.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -267,6 +268,7 @@
     <Content Include="Views\SimpleNotUser\GetUserCars.cshtml" />
     <Content Include="Views\Part\AddPart.cshtml" />
     <Content Include="Views\Part\ShowAllParts.cshtml" />
+    <Content Include="Views\Shared\_AdminPartial.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
