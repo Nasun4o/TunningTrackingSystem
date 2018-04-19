@@ -240,3 +240,7 @@ C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\obj\Debug\HppTuning.Application.pdb
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\bin\AutoMapper.dll
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\bin\AutoMapper.xml
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\bin\Autofac.dll
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\bin\Autofac.Integration.Mvc.dll
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\bin\Autofac.xml
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Application\bin\Autofac.Integration.Mvc.xml

@@ -5,17 +5,17 @@ using System.Web;
 using System.Web.Mvc;
 using HppTuning.Models.ViewModels.Part;
 using HppTuning.Services;
-
+using HppTuning.Services.Dependancies;
 
 namespace HppTuning.Application.Controllers
 {
     public class PartController : Controller
     {
-        private readonly PartService _partService;
+        private readonly IPartService _partService;
 
-        public PartController()
+        public PartController(IPartService _partService)
         {
-            this._partService = new PartService();
+            this._partService = _partService;
         }
 
         [HttpGet]

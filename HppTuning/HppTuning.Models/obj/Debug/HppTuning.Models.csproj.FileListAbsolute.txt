@@ -93,3 +93,7 @@ C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\D
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.pdb
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\AutoMapper.dll
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\AutoMapper.xml
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\Autofac.dll
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\Autofac.Integration.Mvc.dll
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\Autofac.xml
+C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\Autofac.Integration.Mvc.xml

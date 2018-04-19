@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using HppTuning.Models.EntityModels;
 using HppTuning.Models.ViewModels.Part;
+using HppTuning.Services.Dependancies;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace HppTuning.Services
 {
-    public class PartService : Service
+    public class PartService : Service, IPartService
     {
 
         public SimplePartViewModel SetPartFormGetModel(int id)

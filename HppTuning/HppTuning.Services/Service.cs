@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HppTuning.Data;
+using HppTuning.Services.Dependancies;
 
 namespace HppTuning.Services
 {
     
-    public abstract class Service
+    public abstract class Service 
     {
         protected Service()
         {
@@ -16,5 +17,6 @@ namespace HppTuning.Services
         }
 
         public HppDbContext Context { get; set; }
+
     }
 }
