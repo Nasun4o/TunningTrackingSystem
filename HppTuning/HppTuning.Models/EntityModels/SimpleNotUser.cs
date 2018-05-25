@@ -15,5 +15,6 @@ namespace HppTuning.Models.EntityModels
         public string PhoneNumber { get; set; }
 
         public virtual ICollection<Car> Cars { get; set; }
+        public virtual ICollection<RacingHistories> RaceingHistories { get; set; }
     }
 }

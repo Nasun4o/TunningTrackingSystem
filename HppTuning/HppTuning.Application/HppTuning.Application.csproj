@@ -204,6 +204,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PartController.cs" />
+    <Compile Include="Controllers\RaceController.cs" />
     <Compile Include="Controllers\SimpleNotUserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -275,6 +276,8 @@
     <Content Include="Views\Part\AddPart.cshtml" />
     <Content Include="Views\Part\ShowAllParts.cshtml" />
     <Content Include="Views\Shared\_AdminPartial.cshtml" />
+    <Content Include="Views\Race\Index.cshtml" />
+    <Content Include="Views\Race\NewRace.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

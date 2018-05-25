@@ -93,6 +93,7 @@
     <Compile Include="EntityModels\ApplicationUser.cs" />
     <Compile Include="EntityModels\Car.cs" />
     <Compile Include="EntityModels\Part.cs" />
+    <Compile Include="EntityModels\RacingHistories.cs" />
     <Compile Include="EntityModels\SimpleNotUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginConfirmationViewModel.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="ViewModels\Manage\VerifyPhoneNumberViewModel.cs" />
     <Compile Include="ViewModels\Part\AllPartsViewModel.cs" />
     <Compile Include="ViewModels\Part\SimplePartViewModel.cs" />
+    <Compile Include="ViewModels\Race\RacingViewModel.cs" />
     <Compile Include="ViewModels\SimpleUser\SimpleCarModel.cs" />
     <Compile Include="ViewModels\SimpleUser\SimpleCarUserViewModel.cs" />
     <Compile Include="ViewModels\SimpleUser\SimpleUserViewModel.cs" />

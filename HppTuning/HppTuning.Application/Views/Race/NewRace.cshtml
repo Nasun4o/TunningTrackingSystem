@@ -1,0 +1,57 @@
+﻿@model HppTuning.Models.ViewModels.Race.RacingViewModel
+@{
+    ViewBag.Title = "New Races";
+}
+
+<h2>New Race</h2>
+@using (Html.BeginForm("NewRace", "Race", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.FrontTiresPressure, "Front Tires Pressure", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.FrontTiresPressure, new { @class = "form-control", placeholder = "Front Tires Pressure" })
+            @Html.ValidationMessageFor(model => model.FrontTiresPressure)
+        </div>
+    </div>
+    <div class="control-group">
+        @Html.LabelFor(m => m.RearTiresPressure, "Rear Tires Pressure", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.RearTiresPressure, new { @class = "form-control", placeholder = "Rear Tires Pressure" })
+            @Html.ValidationMessageFor(model => model.RearTiresPressure)
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.FrontCoiloverClicks, "Front Coilover Clicks", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.FrontCoiloverClicks, new { @class = "form-control", placeholder = "Front Coilover Clicks" })
+            @Html.ValidationMessageFor(model => model.FrontCoiloverClicks)
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.RearCoiloverClicks, "Rear Coilover Clicks", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.RearCoiloverClicks, new { @class = "form-control", placeholder = "Rear Coilover Clicks" })
+            @Html.ValidationMessageFor(model => model.RearCoiloverClicks)
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Description, "TODO", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextAreaFor(m => m.Description, new { @class = "form-control", placeholder = "TODO" })
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+    </div>
+
+
+    <div class="control-group">
+        <!-- Button -->
+        <div class="controls">
+            <button class="btn btn-success" type="submit">Add race history</button>
+        </div>
+    </div>
+}

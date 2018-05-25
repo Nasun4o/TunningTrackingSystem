@@ -22,5 +22,6 @@ namespace HppTuning.Data
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Part> Parts { get; set; }
         public virtual DbSet<SimpleNotUser> SimpleNotUsers { get; set; }
+        public virtual DbSet<RacingHistories> RaceingHistorieses { get; set; }
     }
 }
