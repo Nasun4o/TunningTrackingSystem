@@ -10,10 +10,10 @@ namespace HppTuning.Services
         public CarUserViewModel GetCarModelWithSimpleUsersList()
         {
             CarUserViewModel carModel = new CarUserViewModel();
-            List<SimpleNotUser> users = new List<SimpleNotUser>();
+            List<ApplicationUser> users = new List<ApplicationUser>();
 
 
-            foreach (var user in this.Context.SimpleNotUsers)
+            foreach (var user in this.Context.Users)
             {
                 users.Add(user);
             }
@@ -30,8 +30,8 @@ namespace HppTuning.Services
                 Make = model.Make,
                 Model = model.Model,
                 NewtonMetre = model.NewtonMetre,
-                Type = model.Type,
-                SimpleNotUserId = model.UserId
+                Type = model.Type
+                //SimpleNotUserId = model.UserId
                 
             };
             this.Context.Cars.Add(cuvm);

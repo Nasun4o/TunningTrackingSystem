@@ -18,7 +18,6 @@ namespace HppTuning.Models.EntityModels
         public string Type { get; set; }
         
         public virtual ICollection<Part> Parts { get; set; }
-        public virtual SimpleNotUser SimpleNotUser { get; set; }
-        public int? SimpleNotUserId { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }

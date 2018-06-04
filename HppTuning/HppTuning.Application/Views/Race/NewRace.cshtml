@@ -40,13 +40,33 @@
     </div>
 
     <div class="control-group">
-        @Html.LabelFor(m => m.Description, "TODO", new { @class = "col-sm-2 control-label" })
+        @Html.LabelFor(m => m.BestTimeOfTheDay, "Best Lap Time", new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextAreaFor(m => m.Description, new { @class = "form-control", placeholder = "TODO" })
-            @Html.ValidationMessageFor(model => model.Description)
+            @Html.TextBoxFor(m => m.BestTimeOfTheDay, new { @class = "form-control", placeholder = "Best Lap Time" })
+            @Html.ValidationMessageFor(model => model.BestTimeOfTheDay)
         </div>
     </div>
 
+    <div class="control-group">
+        @Html.LabelFor(m => m.Tyres, "What tires use?", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(m => m.Tyres, new { @class = "form-control", placeholder = "What tires use?" })
+            @Html.ValidationMessageFor(model => model.Tyres)
+        </div>
+    </div>
+
+    <div class="control-group">
+        @Html.LabelFor(m => m.Notes, "Notes", new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextAreaFor(m => m.Notes, new { @class = "form-control", placeholder = "Notes" })
+            @Html.ValidationMessageFor(model => model.Notes)
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="col-sm-10">
+            @Html.HiddenFor(m => m.TimeOfHistoryCreated)
+        </div>
+    </div>
 
     <div class="control-group">
         <!-- Button -->

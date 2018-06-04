@@ -7,7 +7,7 @@ namespace HppTuning.Models.ViewModels.Car
     {
         public CarUserViewModel()
         {
-                this.UsersList = new List<SimpleNotUser>();
+                this.UsersList = new List<ApplicationUser>();
         }
 
         public int Id { get; set; }
@@ -16,7 +16,7 @@ namespace HppTuning.Models.ViewModels.Car
         public string Make { get; set; }
         public string Model { get; set; }
         public string Type { get; set; }
-        public IEnumerable<SimpleNotUser> UsersList { get; set; }
+        public IEnumerable<ApplicationUser> UsersList { get; set; }
         public int UserId { get; set; }
     }
 }

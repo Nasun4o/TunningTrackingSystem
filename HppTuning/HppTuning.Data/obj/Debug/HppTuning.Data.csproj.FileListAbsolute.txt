@@ -116,3 +116,4 @@ C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Data\bin\Debug\
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Data\bin\Debug\System.Web.Helpers.xml
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Data\obj\Debug\HppTuning.Data.Migrations.AddRacingHistoriesEntity.resources
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Data\obj\Debug\HppTuning.Data.csproj.GenerateResource.Cache
+C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Data\obj\Debug\HppTuning.Data.Migrations.SolidChangesOnUserStructure.resources

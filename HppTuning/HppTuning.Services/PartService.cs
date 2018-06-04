@@ -21,7 +21,7 @@ namespace HppTuning.Services
 
         public AllPartsViewModel ShowAllPartsForCarById(int id)
         {
-            var data = this.Context.Parts.Where(x => x.CarId == id).ToArray();
+            var data = this.Context.Parts.Where(x => x.Id == id).ToArray();
 
             AllPartsViewModel allPartsViewModel = new AllPartsViewModel();
             List<SimplePartViewModel> listOfPartViewModels = new List<SimplePartViewModel>();

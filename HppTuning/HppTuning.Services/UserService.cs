@@ -11,28 +11,28 @@ namespace HppTuning.Services
     public class UserService : Service
     {
 
-        public void AddNewUser(SimpleUserViewModel model)
-        {
-            SimpleNotUser user = new SimpleNotUser()
-            {
-                FullName = model.FullName,
-                PhoneNumber = model.PhoneNumber
+        //public void AddNewUser(SimpleUserViewModel model)
+        //{
+        //    MyUserInfo user = new MyUserInfo()
+        //    {
+        //        FullName = model.FullName,
+        //        PhoneNumber = model.PhoneNumber
                  
-            };
-            this.Context.SimpleNotUsers.Add(user);
-            this.Context.SaveChanges();
-        }
+        //    };
+        //    this.Context.Users.Add(user);
+        //    this.Context.SaveChanges();
+        //}
 
         public SimpleUserWithCarsModel GetUserCar()
         {
-            var data = this.Context.Cars.Include("SimpleNotUser").ToArray();
+            var data = this.Context.Cars.Include("ApplicationUser").ToArray();
             SimpleUserWithCarsModel carsWithUserViewModel = new SimpleUserWithCarsModel();
             List<SimpleCarUserViewModel> carUserView = new List<SimpleCarUserViewModel>();
             foreach (var item in data)
             {
                 SimpleCarUserViewModel scuvm = new SimpleCarUserViewModel
                 {
-                    FullName = item.SimpleNotUser.FullName,
+                    FullName = item.ApplicationUser.FullName,
                     HorsePower = item.HorsePower,
                     Make = item.Make,
                     Model = item.Model,

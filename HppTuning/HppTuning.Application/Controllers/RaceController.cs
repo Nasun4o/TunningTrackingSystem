@@ -31,7 +31,7 @@ namespace HppTuning.Application.Controllers
         }
 
         [HttpPost]
-        public ActionResult NewRace([Bind(Include = "FrontTiresPressure, RearTiresPressure, FrontCoiloverClicks, RearCoiloverClicks, Description, HistoryDate")] RacingViewModel raceModel)
+        public ActionResult NewRace([Bind(Include = "FrontTiresPressure, RearTiresPressure, FrontCoiloverClicks, RearCoiloverClicks, Notes, TimeOfHistoryCreated")] RacingViewModel raceModel)
         {
             if (ModelState.IsValid)
             {
@@ -42,5 +42,12 @@ namespace HppTuning.Application.Controllers
             return View(raceModel);
         }
 
+        [HttpGet]
+        public ActionResult RaceHistory()
+        {
+            //Application user should replace SimpleUser
+            ApplicationUser user = new ApplicationUser();
+            return View();
+        }
     }
 }

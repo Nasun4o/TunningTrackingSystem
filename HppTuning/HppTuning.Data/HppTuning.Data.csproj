@@ -91,6 +91,10 @@
     <Compile Include="Migrations\201805241613372_AddRacingHistoriesEntity.Designer.cs">
       <DependentUpon>201805241613372_AddRacingHistoriesEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806041839400_SolidChangesOnUserStructure.cs" />
+    <Compile Include="Migrations\201806041839400_SolidChangesOnUserStructure.Designer.cs">
+      <DependentUpon>201806041839400_SolidChangesOnUserStructure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -107,6 +111,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201805241613372_AddRacingHistoriesEntity.resx">
       <DependentUpon>201805241613372_AddRacingHistoriesEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041839400_SolidChangesOnUserStructure.resx">
+      <DependentUpon>201806041839400_SolidChangesOnUserStructure.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

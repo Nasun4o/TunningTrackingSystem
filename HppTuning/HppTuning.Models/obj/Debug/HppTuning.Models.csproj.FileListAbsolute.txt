@@ -59,7 +59,6 @@ C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debu
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csproj.CoreCompileInputs.cache
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.dll
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.pdb
-C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csprojResolveAssemblyReference.cache
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\HppTuning.Models.dll.config
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\HppTuning.Models.dll
 C:\Users\operator\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\HppTuning.Models.pdb
@@ -103,3 +102,4 @@ C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debu
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\Autofac.xml
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\Autofac.Integration.Mvc.xml
 C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\bin\Debug\AutoMapper.xml
+C:\Users\Nasko\Desktop\TunningTrackingSystem\HppTuning\HppTuning.Models\obj\Debug\HppTuning.Models.csprojResolveAssemblyReference.cache

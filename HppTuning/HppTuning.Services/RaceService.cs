@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HppTuning.Models.EntityModels;
 using HppTuning.Models.ViewModels.Race;
 
@@ -12,14 +8,18 @@ namespace HppTuning.Services
     {
         public void AddNewRaceHistory(RacingViewModel raceModel)
         {
+
             var raceHistory = new RacingHistories()
             {
                 FrontTiresPressure = raceModel.FrontTiresPressure,
                 RearTiresPressure = raceModel.RearTiresPressure,
                 FrontCoiloverClicks = raceModel.RearCoiloverClicks,
                 RearCoiloverClicks = raceModel.RearCoiloverClicks,
-                Description = raceModel.Description,
-                HistoryDate = DateTime.Now
+                Notes = raceModel.Notes,
+                TimeOfHistoryCreated = DateTime.Now,
+                BestTimeOfTheDay = raceModel.BestTimeOfTheDay,
+                Tracks = raceModel.Tracks,
+                Tyres = raceModel.Tyres
             };
 
             this.Context.RaceingHistorieses.Add(raceHistory);

@@ -94,8 +94,9 @@
     <Compile Include="EntityModels\Car.cs" />
     <Compile Include="EntityModels\Part.cs" />
     <Compile Include="EntityModels\RacingHistories.cs" />
-    <Compile Include="EntityModels\SimpleNotUser.cs" />
+    <Compile Include="EntityModels\MyUserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracks.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginListViewModel.cs" />
     <Compile Include="ViewModels\Account\ForgotPasswordViewModel.cs" />

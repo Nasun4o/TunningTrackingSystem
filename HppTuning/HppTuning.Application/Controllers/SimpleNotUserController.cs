@@ -25,29 +25,27 @@ namespace HppTuning.Application.Controllers
             return this.View(carModel);
         }
 
-        [HttpGet]
-        public ActionResult NewSimpleUser()
-        {
-            return View();
-        }
+        //[HttpGet]
+        //public ActionResult NewSimpleUser()
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
-        public ActionResult NewSimpleUser([Bind(Exclude = "Id")] SimpleUserViewModel simpleUserViewModel)
-        {
-            if (ModelState.IsValid)
-            {
-                this._userService.AddNewUser(simpleUserViewModel);
-                return RedirectToAction("Add", "Car");
-            }
+        //[HttpPost]
+        //public ActionResult NewSimpleUser([Bind(Exclude = "Id")] SimpleUserViewModel simpleUserViewModel)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        this._userService.AddNewUser(simpleUserViewModel);
+        //        return RedirectToAction("Add", "Car");
+        //    }
 
-            return View(simpleUserViewModel);
-        }
-
-
+        //    return View(simpleUserViewModel);
+        //}
 
 
 
-        // GET: SimpleNotUser
+        // GET: ApplicationUser
         public ActionResult Index()
         {
             return View();
