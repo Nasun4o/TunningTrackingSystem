@@ -27,11 +27,12 @@ namespace HppTuning.Application.Controllers
         [HttpGet]
         public ActionResult NewRace()
         {
+
             return View();
         }
-
+        //"BestLapTimeOfTheDay, FrontTiresPressure, RearTiresPressure, FrontCoiloverClicks, RearCoiloverClicks, Tyres, Notes, , Tracks"
         [HttpPost]
-        public ActionResult NewRace([Bind(Include = "FrontTiresPressure, RearTiresPressure, FrontCoiloverClicks, RearCoiloverClicks, Notes, TimeOfHistoryCreated")] RacingViewModel raceModel)
+        public ActionResult NewRace([Bind(Exclude = "TimeOfHistoryCreated")] RacingViewModel raceModel)
         {
             if (ModelState.IsValid)
             {

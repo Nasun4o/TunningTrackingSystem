@@ -25,14 +25,14 @@ namespace HppTuning.Services
 
         public SimpleUserWithCarsModel GetUserCar()
         {
-            var data = this.Context.Cars.Include("ApplicationUser").ToArray();
+            var data = this.Context.Cars.Include("MyUserInfo").ToArray();
             SimpleUserWithCarsModel carsWithUserViewModel = new SimpleUserWithCarsModel();
             List<SimpleCarUserViewModel> carUserView = new List<SimpleCarUserViewModel>();
             foreach (var item in data)
             {
                 SimpleCarUserViewModel scuvm = new SimpleCarUserViewModel
                 {
-                    FullName = item.ApplicationUser.FullName,
+                    FullName = item.MyUserInfo.FullName,
                     HorsePower = item.HorsePower,
                     Make = item.Make,
                     Model = item.Model,

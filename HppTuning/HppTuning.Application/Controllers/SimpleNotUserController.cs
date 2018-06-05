@@ -45,7 +45,7 @@ namespace HppTuning.Application.Controllers
 
 
 
-        // GET: ApplicationUser
+        // GET: MyUserInfo
         public ActionResult Index()
         {
             return View();

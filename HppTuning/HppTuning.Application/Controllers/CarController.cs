@@ -27,7 +27,7 @@ namespace HppTuning.Application.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add([Bind(Include = "Id, HorsePower, NewtonMetre, Make, Model, Type, UserId")] CarUserViewModel carUserModel)
+        public ActionResult Add([Bind(Include = "Id, HorsePower, NewtonMetre, Make, Model, Type, UserInfo")] CarUserViewModel carUserModel)
         {
             if (ModelState.IsValid)
             {

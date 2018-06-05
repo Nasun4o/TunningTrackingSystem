@@ -40,10 +40,10 @@
     </div>
 
     <div class="control-group">
-        @Html.LabelFor(m => m.BestTimeOfTheDay, "Best Lap Time", new { @class = "col-sm-2 control-label" })
+        @Html.LabelFor(m => m.BestLapTimeOfTheDay, "Best Lap Time", new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(m => m.BestTimeOfTheDay, new { @class = "form-control", placeholder = "Best Lap Time" })
-            @Html.ValidationMessageFor(model => model.BestTimeOfTheDay)
+            @Html.TextBoxFor(m => m.BestLapTimeOfTheDay, new { @class = "form-control", placeholder = "Best Lap Time" })
+            @Html.ValidationMessageFor(model => model.BestLapTimeOfTheDay)
         </div>
     </div>
 
@@ -62,6 +62,13 @@
             @Html.ValidationMessageFor(model => model.Notes)
         </div>
     </div>
+
+    <div class="control-group">
+        <div class="col-sm-10">
+            @Html.EnumDropDownListFor(m => m.Tracks, "Select Track", new {@class = "form-control"})
+        </div>
+    </div>
+
     <div class="control-group">
         <div class="col-sm-10">
             @Html.HiddenFor(m => m.TimeOfHistoryCreated)

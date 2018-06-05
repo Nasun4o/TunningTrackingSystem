@@ -18,6 +18,6 @@ namespace HppTuning.Models.EntityModels
         public string Type { get; set; }
         
         public virtual ICollection<Part> Parts { get; set; }
-        public virtual ApplicationUser ApplicationUser { get; set; }
+        public virtual MyUserInfo MyUserInfo { get; set; }
     }
 }

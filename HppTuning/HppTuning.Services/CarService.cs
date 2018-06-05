@@ -31,7 +31,7 @@ namespace HppTuning.Services
                 Model = model.Model,
                 NewtonMetre = model.NewtonMetre,
                 Type = model.Type
-                //SimpleNotUserId = model.UserId
+                //SimpleNotUserId = model.UserInfo
                 
             };
             this.Context.Cars.Add(cuvm);

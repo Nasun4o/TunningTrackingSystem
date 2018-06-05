@@ -17,6 +17,6 @@ namespace HppTuning.Models.EntityModels
         public Tracks Tracks { get; set; }
         public string  Tyres { get; set; }
 
-        public virtual ApplicationUser User { get; set; }
+        public virtual MyUserInfo UserInfo { get; set; }
     }
 }
